@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+$color1 : #0cc579;
+$color2: #006c40;
+$color3: white;
+$widthBackground: 100%;
+$heightBackground: 100%;
+
+.login-page{
+	background-color: $color1;
+	width: $widthBackground;
+	height: $heightBackground;
+}
+.register-page{
+	background-color: $color1;
+	height: auto;
+}
+.login-logo{
+	padding: 40px;
+}
+.btn-model{
+	background-color: $color2;
+	border: $color2;
+	&:hover{
+		background: #000;
+		-webkit-transition: 0.5s all;
+	}
+}
+.login-page .wrapper{
+	max-width: 360px;
+	margin: 0 auto;
+}
+.link-group{
+	.form-create-acc{
+		float: right;
+		&>a{
+			color: $color3 !important;
+			text-decoration: none !important;
+			&:hover{
+				text-decoration: underline !important;
+			}
+	}
+	}
+	.form-forgot-pass{
+	a{
+		color: $color3;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline !important;
+		}
+	}
+	p{
+		color: $color3;
+	}
+}
+}
+
+@media screen and (max-width: 992px){
+	.model-form{
+		.form-create-acc{
+			float: inherit !important;
+		}
+		.link-group{
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.form-create-acc{
+		float: inherit !important;
+	}
+	.link-group{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 525px) {
+	.login-page .wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+}
+@media screen and (max-width: 425px) {
+	.model-form{
+		width: 100%;
+  }
+  .logo-width{
+		width: 70%;
+  }
+}
+
+
+
+
+
+// .login-page .wrapper {
+// 	max-width: 90%;
+// 	margin: 0 auto;
+// }
+
+// .wrapper {
+// 	max-width: 360px;
+// 	margin: 0 auto;
+// }
