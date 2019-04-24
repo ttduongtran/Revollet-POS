@@ -14,26 +14,32 @@
 </head>
 
 <body>
-  <div class="login-page container-fluid container-login d-flex justify-content-center align-items-center">
+  <div class="register-page login-page container-fluid container-login d-flex justify-content-center align-items-center">
     <div class="d-flex flex-column w-100">
       <div class="wrapper">
         <div class="login-logo text-center"><img class="img-fluid" src="assets/images/logo.png" alt=""></div>
         <div class="model-form m-auto">
           <form>
             <div class="form-group">
-              <input type="email" class="form-control border-dark" name="email" aria-describedby="email"
+              <input type="text" class="form-control border-dark" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control border-dark" name="email" aria-describedby="emailHelp"
                 placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control border-dark" name="phone" placeholder="Phone">
             </div>
             <div class="form-group">
               <input type="password" class="form-control border-dark" name="password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary w-100 btn-model mt-4 btn-hover">Sign In</button>
-            <div class="link-group pt-3">
-              <div class="form-forgot-pass d-lg-inline-block">
-                <a href="forgot-password.html">Forgot Password ?</a>
-              </div>
-              <div class="form-create-acc d-lg-inline-block ">
-                <a href="register.html">Create an account</a>
+            <div class="form-group">
+              <input type="password" class="form-control border-dark" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 btn-model mt-4">Register</button>
+            <div class="link-group pt-3 pb-4">
+              <div class="form-forgot-pass text-center">
+                  Do you have an account?<span> <a href="login.html">Login</a></span>
               </div>
             </div>
           </form>
