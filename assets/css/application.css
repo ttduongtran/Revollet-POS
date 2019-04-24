@@ -1,0 +1,93 @@
+@import "fonts.css";
+html, body {
+	color: #4c4c4c;
+	background-color: #f5f5f5;
+	font-family: 'HelveticaNeueLT', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/*pos style default*/
+.bg-green {
+	background-color: #0cc579;
+}
+.text-color-green {
+	color: #0cc579;
+}
+.text-color-main {
+	color: #4c4c4c;
+}
+.text-color-grey {
+	color: #a9a9a9;
+}
+.text-color-black {
+	color: #000000;
+}
+.btn-pos {
+	background-color: #0cc579;
+	color: #fff;
+}
+
+.btn-pos-outline {
+	background-color: #fff;
+	border: 1px solid #0cc579;
+	color: #0cc579;
+}
+
+/*header style*/
+.column-top .navbar-toggler {
+	border: none;
+}
+.column-top span.navbar-toggler-line {
+  background: #fff;
+  width: 25px;
+  display: block;
+  margin: 5px auto;
+  height: 3px;
+  border-radius: 10px;
+}
+.column-navbar, .column-main {
+	background-color: #0cc579;
+}
+.column-navbar {
+	border-right: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+}
+
+.column-nav-top {
+	background-color: #0cc579;
+	padding: 10px;
+}
+
+.column-nav-top .title {
+	color: #fff;
+	font-size: 1.75rem;
+	line-height: 50px;
+	margin: 0;
+}
+
+.column-nav-top .btn-icon-group .btn {
+	padding: 10px;
+}
+
+.column-nav-top .btn-icon-group .btn i {
+	color: #fff;
+	font-size: 1.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
