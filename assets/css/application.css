@@ -78,8 +78,12 @@ html, body {
 	font-size: 1.75rem;
 }
 
-.page-cash-management .column-content {
-	display: block;
+
+@media screen and (min-width: 768px) {
+	.page-cash-management .column-content {
+		display: block;
+		min-height: 100vh;
+	}
 }
 
 

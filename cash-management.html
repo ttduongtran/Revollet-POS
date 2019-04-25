@@ -64,17 +64,63 @@
           <div class="column-content">
             <div class="column-content-inner">
               <ul class="nav nav-tabs cash-tabs" id="tab-cash" role="tablist">
-                <li class="nav-item">
+                <li class="nav-item w-50">
                   <a class="nav-link active" id="drawer-detail" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Drawer Details</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item w-50">
                   <a class="nav-link" id="activity-log" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Activity Log</a>
                 </li>
               </ul>
               <div class="sub-title">Starting Date: 25 May 2019</div>
               <div class="tab-content" >
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="drawer-detail">
-                  
+                  <div class="card card-wrapper">
+                    <div class="card-content p-4">
+                      <a href="" class="btn btn-pos w-100 mb-4">Close Drawer</a>
+                      <div class="drawer-list">
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Starting Cash</span>
+                          <span class="w-50"></span>
+                          <span class="text-right w-25 text-dark">$175.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Cash Tendered</span>
+                          <span class="w-50"></span>
+                          <span class="text-right w-25 text-dark">$125.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Cash Change</span>
+                          <span class="w-50"></span>
+                          <span class="text-right w-25 text-dark">$45.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Cash Refund</span>
+                          <span class="w-50"></span>
+                          <span class="text-right w-25 text-dark">$17.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Paid In</span>
+                          <span class="w-50"><a class="btn btn-pos">Deposit</a></span>
+                          <span class="text-right w-25 text-dark">$340.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Paid Out</span>
+                          <span class="w-50"><a class="btn btn-danger">Pay Out</a></span>
+                          <span class="text-right w-25 text-dark">$34.00</span>
+                        </div>
+                        <div class="drawer-info d-flex">
+                          <span class="w-25">Expected In Drawer</span>
+                          <span class="w-50"></span>
+                          <span class="text-right w-25 text-dark">$34.00</span>
+                        </div>
+                         <div class="drawer-info drawer-last d-flex">
+                          <h4 class="w-25 font-weight-bold text-dark">Total Actual</h4>
+                          <span class="w-50"></span>
+                          <h4 class="text-right w-25 text-dark font-weight-bold text-dark">$391.00</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="activity-log">.or..</div>
               </div>
@@ -83,9 +129,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="cash-page">
-    hello cash page
   </div>
 </body>
 <script src="./assets/js/jquery-3.3.1.min.js"></script>     
