@@ -1,0 +1,17 @@
+.transtion {
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
+.page-cash-management .column-content .date-time-item {
+  background-color: #fff;
+  text-align: -webkit-match-parent;
+  padding: 12px 50px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.page-cash-management .column-content .date-time-item a {
+  color: #4c4c4c;
+}
+/*# sourceMappingURL=page-cash.css.map */
