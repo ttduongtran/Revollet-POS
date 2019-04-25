@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,UAAU,EAAE,GAAG;EACf,eAAe,EAAE,GAAG;EACpB,kBAAkB,EAAE,GAAG;CACvB;;AACD,AAME,qBANmB,CACpB,eAAe,CAKd,eAAe,CAAC;EACb,gBAAgB,EAAE,IAAI;EACvB,UAAU,EAAE,oBAAoB;EAC9B,OAAO,EAAE,SAAS;EACpB,aAAa,EAAE,iBAAiB;CAKjC;;AAfH,AAWI,qBAXiB,CACpB,eAAe,CAKd,eAAe,CAKb,CAAC,CAAC;EACD,KAAK,EAAE,OAAO;CAEd",
+    "sources": [
+        "page-cash.scss"
+    ],
+    "names": [],
+    "file": "page-cash.css"
+}
