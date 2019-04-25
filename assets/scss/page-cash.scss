@@ -5,10 +5,7 @@
 }
 .page-cash-management {
 	.column-content {
-
-		#datetimepicker {
-
-		}
+		#datetimepicker {}
 		.date-time-item {
 	    background-color: #fff;
 		  text-align: -webkit-match-parent;
@@ -16,8 +13,27 @@
 		  border-bottom: 1px solid #d4d4d4;
 		  a {
 		  	color: #4c4c4c;
-
 		  }
 		}
+		.column-content-inner {
+			padding: 20px;
+			.nav.cash-tabs {
+				border: 1px solid #0cc579;
+    		border-radius: 6px;
+	    	background-color: transparent;
+				max-width: 300px;
+				margin: 0 auto;
+				li.nav-item {
+					a.nav-link {
+						color: #0cc579;
+						&.active {
+							background-color: #0cc579;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		
 	}
 }
