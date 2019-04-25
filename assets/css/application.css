@@ -28,13 +28,18 @@ html, body {
 	background-color: #0cc579;
 	color: #fff;
 }
-
 .btn-pos-outline {
 	background-color: #fff;
 	border: 1px solid #0cc579;
 	color: #0cc579;
 }
-
+.is-active {
+  background-color: #0fc579 !important;
+  color: #fff !important;
+}
+.is-active a {
+  color: #fff !important;
+}
 /*header style*/
 .column-top .navbar-toggler {
 	border: none;
@@ -46,9 +51,6 @@ html, body {
   margin: 5px auto;
   height: 3px;
   border-radius: 10px;
-}
-.column-navbar, .column-main {
-	background-color: #0cc579;
 }
 .column-navbar {
 	border-right: 1px solid #d4d4d4;
@@ -74,6 +76,10 @@ html, body {
 .column-nav-top .btn-icon-group .btn i {
 	color: #fff;
 	font-size: 1.75rem;
+}
+
+.page-cash-management .column-content {
+	display: block;
 }
 
 
