@@ -56,7 +56,7 @@
             <div class="column-top text-center d-flex">
               <h2 class="title w-100">Drawer Summary</h2>
               <div class="pull-right text-right d-flex btn-icon-group">
-                <a href="mailto:admin@gmail.com" class="btn btn-link"><i class="far fa-envelope"></i></a>
+                <a href="mailto:admin@gmail.com" class="btn btn-link"  data-toggle="modal" data-target="#email-drawer-report"><i class="far fa-envelope"></i></a>
                 <a href="mailto:admin@gmail.com" class="btn btn-link"><i class="fas fa-print"></i></a>
               </div>
             </div>
@@ -65,18 +65,18 @@
             <div class="column-content-inner">
               <ul class="nav nav-tabs cash-tabs" id="tab-cash" role="tablist">
                 <li class="nav-item w-50">
-                  <a class="nav-link active" id="drawer-detail" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Drawer Details</a>
+                  <a class="nav-link active" id="drawer-detail" data-toggle="tab" href="#drawer-tab" role="tab" aria-controls="drawer-tab" aria-selected="true">Drawer Details</a>
                 </li>
                 <li class="nav-item w-50">
-                  <a class="nav-link" id="activity-log" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Activity Log</a>
+                  <a class="nav-link" id="activity-log" data-toggle="tab" href="#activity-log-tab" role="tab" aria-controls="profile" aria-selected="false">Activity Log</a>
                 </li>
               </ul>
               <div class="sub-title">Starting Date: 25 May 2019</div>
               <div class="tab-content" >
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="drawer-detail">
+                <div class="tab-pane fade show active" id="drawer-tab" role="tabpanel" aria-labelledby="drawer-detail">
                   <div class="card card-wrapper">
                     <div class="card-content p-4">
-                      <a href="" class="btn btn-pos w-100 mb-4">Close Drawer</a>
+                      <a href="" class="btn btn-pos w-100 mb-4"  data-toggle="modal" data-target="#cash-count-drawer">Close Drawer</a>
                       <div class="drawer-list">
                         <div class="drawer-info d-flex">
                           <span class="w-25">Starting Cash</span>
@@ -100,12 +100,12 @@
                         </div>
                         <div class="drawer-info d-flex">
                           <span class="w-25">Paid In</span>
-                          <span class="w-50"><a class="btn btn-pos">Deposit</a></span>
+                          <span class="w-50"><a class="btn btn-pos" data-toggle="modal" data-target="#cash-deposit">Deposit</a></span>
                           <span class="text-right w-25 text-dark">$340.00</span>
                         </div>
                         <div class="drawer-info d-flex">
                           <span class="w-25">Paid Out</span>
-                          <span class="w-50"><a class="btn btn-danger">Pay Out</a></span>
+                          <span class="w-50"><a class="btn btn-danger" data-toggle="modal" data-target="#cash-payout">Pay Out</a></span>
                           <span class="text-right w-25 text-dark">$34.00</span>
                         </div>
                         <div class="drawer-info d-flex">
@@ -122,8 +122,223 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="activity-log">.or..</div>
+                <div class="tab-pane fade" id="activity-log-tab" role="tabpanel" aria-labelledby="activity-log">
+                  <div class="card card-wrapper">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date Time</th>
+                            <th scope="col">Staff</th>
+                            <th scope="col">Cash In</th>
+                            <th scope="col">Cash Out</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Type</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <p>2019-5-25</p>
+                              <p class="text-grey">9:14:44</p>
+                            </td>
+                            <td>Cashier 1</td>
+                            <td>$50.00</td>
+                            <td>$20.00</td>
+                            <td>Payment</td>
+                            <td>Check</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - Cash Deposit -->
+  <div class="modal modal-deposit fade" id="cash-deposit" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <h5 class="modal-title">Deposit</h5>
+          <button class="btn"><i class="far fa-save"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="cash-list">
+              <div class="cash-info d-flex">
+                <span class="w-50">Amount</span>
+                <span class="text-right w-50 text-dark">$0.00</span>
+              </div>
+              <div class="cash-info d-flex">
+                <span class="w-50">Description</span>
+                <span class="text-right w-50 text-dark">$125.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - Cash payout -->
+  <div class="modal modal-deposit fade" id="cash-payout" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <h5 class="modal-title">Pay Out</h5>
+          <button class="btn"><i class="far fa-save"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="cash-list">
+              <div class="cash-info d-flex">
+                <span class="w-50">Amount</span>
+                <span class="text-right w-50 text-dark">$0.00</span>
+              </div>
+              <div class="cash-info d-flex">
+                <span class="w-50">Description</span>
+                <span class="text-right w-50 text-dark">$125.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - Cash Count in Drawer -->
+  <div class="modal modal-deposit fade" id="cash-count-drawer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <h5 class="modal-title text-center w-100">Count in Drawer</h5>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="cash-list">
+              <div class="cash-info d-flex">
+                <span class="w-50">Expected in Drawer</span>
+                <span class="text-right w-50 text-dark">$20.00</span>
+              </div>
+              <div class="cash-info d-flex">
+                <span class="w-50">Actual</span>
+                <span class="text-right w-50">Enter Amount</span>
+              </div>
+              <div class="cash-info d-flex">
+                <span class="w-50">Different</span>
+                <span class="text-right w-50 text-dark">$0.00</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-pos w-100 mt-4 mb-2">Close Drawer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - Email drawer report -->
+  <div class="modal modal-deposit fade" id="email-drawer-report" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <h5 class="modal-title text-center w-100">Email Drawer Report</h5>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="email-drawer-report">
+              <form action="">
+                <div class="input-group p-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email">
+                  <div class="input-group-append">
+                    <button class="btn btn-pos" type="submit">Send</button>
+                  </div>
+                </div>
+                
+              </form>
             </div>
           </div>
         </div>

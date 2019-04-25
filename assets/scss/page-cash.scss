@@ -45,7 +45,7 @@
 							color: #fff;
 						}
 						&:hover {
-							background-color: rgba(12, 197, 121, 0.6);
+							background-color: #08945a;
 							color: #fff;
 						}
 					}
@@ -68,5 +68,69 @@
 				}
 			}
 		}
+
+		#activity-log-tab {
+			table {
+				th {
+					color: #0fc579;
+					font-weight: 500;
+				}
+				td {
+					p {
+						margin: 0;
+					}
+					.text-grey {
+						color: #a9a9a9;
+					}
+				}
+			}
+		}
 	}
 }
+
+.modal.modal-deposit .card {
+	.cash-list {
+		.cash-info {
+	    color: #a9a9a9;
+	    border-top: 1px solid #e6e6e6;
+	    padding: 12px;
+	    min-height: 24px;
+	    line-height: 24px;
+		}
+	}
+}
+
+.modal .email-drawer-report {
+	.input-group {
+		input {
+			border: none;
+			font-size: 20px;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.input-group-text {
+	    background: transparent;
+	    border: none;
+	    font-size: 30px;
+	    padding: 4px;
+	    color: green;
+		}
+		.input-group-append {
+			.btn {
+		    border-radius: 6px;
+    		padding: 8px 20px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
