@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="author" content="">
@@ -9,14 +10,137 @@
   <link rel="icon" type="image/png" href="./images/rpoint-logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inventory | POS</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css" />
+  <link rel="stylesheet" href="assets/css/inventory-product.css">
 </head>
+
 <body>
-    
+  <div class="page-inventory-product container-fluid">
+    <div class="row">
+      <div class="col-md-3 p-0">
+        <div class="column-navbar">
+          <div class="column-nav-top">
+            <div class="column-top">
+              <div class="topbar float-left">
+                <nav class="navbar bg-green pl-0 pr-0">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLeft"
+                    aria-controls="navLeft" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                  </button>
+                </nav>
+                <div class="collapse" id="navLeft">
+                  <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                  </div>
+                </div>
+              </div>
+              <h2 class="title text-center">Inventory</h2>
+            </div>
+          </div>
+          <div class="column-content">
+            <div class="category-list-group">
+              <div class="d-flex category-item align-items-center active">
+                <i class="fas fa-tags"></i>
+                <p>Product</p>
+              </div>
+              <div  class="d-flex category-item align-items-center">
+                <i class="fas fa-box-open"></i>
+                <p>Package</p>
+              </div>
+              <div class="d-flex category-item align-items-center">
+                <i class="fas fa-percent"></i>
+                <p>Discount</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9  p-0">
+        <div class="column-main">
+          <div class="column-nav-top">
+            <div class="column-top text-center d-flex">
+              <h2 class="title w-100">Product</h2>
+              <div class="pull-right text-right d-flex btn-icon-group">
+                <a href="mailto:admin@gmail.com" class="btn btn-link"><i class="far fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="column-content">
+            <div class="column-content-inner">
+              <div class="list-product">
+                <div class="product d-flex">
+                  <div class="product-pic d-flex justify-content-center align-items-center"><img src="assets/images/logo.png"
+                      alt="">
+                  </div>
+                  <div class="product-detail w-100">
+                    <div class="product-info d-flex justify-content-between">
+                      <div class="text pt-4">
+                        <p class="product-name">Strappy jean shoes</p>
+                        <p>Strappy jean shoes, size 42</p>
+                      </div>
+                      <div class="prices d-flex pr-4 justify-content-center align-items-center">
+                        <div class="wrapper pt-4">
+                          <span class="price-01 ">$175.00</span>
+                          <span class="price-02 ">$175.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product d-flex">
+                  <div class="product-pic d-flex justify-content-center align-items-center"><img src="assets/images/logo.png"
+                      alt="">
+                  </div>
+                  <div class="product-detail w-100">
+                    <div class="product-info d-flex justify-content-between">
+                      <div class="text pt-4">
+                        <p class="product-name">Bag Denim</p>
+                        <p>Bag Denim Leather, Black</p>
+                      </div>
+                      <div class="prices d-flex pr-4 justify-content-center align-items-center">
+                        <div class="wrapper pt-4">
+                          <span class="price-01 hide">$175.00</span>
+                          <span class="price-02 ">$120.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product d-flex">
+                  <div class="product-pic d-flex justify-content-center align-items-center"><img src="assets/images/logo.png"
+                      alt="">
+                  </div>
+                  <div class="product-detail w-100">
+                    <div class="product-info d-flex justify-content-between">
+                      <div class="text pt-4">
+                        <p class="product-name">Levi's Collection</p>
+                        <p>Levi's Collection,</p>
+                      </div>
+                      <div class="prices d-flex pr-4 justify-content-center align-items-center">
+                        <div class="wrapper pt-4">
+                          <span class="price-01 ">$45.00</span>
+                          <span class="price-02 ">$45.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-<script src="./assets/js/jquery-3.3.1.min.js"></script>     
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/index.js"></script>     
+<script src="./assets/js/index.js"></script>
+
 </html>
