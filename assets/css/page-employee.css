@@ -1,0 +1,86 @@
+.page-member .column-nav-top a.btn-plus {
+  color: #fff;
+  font-size: 24px;
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
+.page-member .column-nav-top a.btn-plus:hover {
+  color: #4c4c4c;
+}
+
+.page-member .card-member .member-info .member-info-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+
+.page-member .card-member .member-info .member-info-item:last-child {
+  border-bottom: 0;
+}
+
+.page-member .column-content .column-content-inner .search-form {
+  background-color: #fff;
+}
+
+.page-member .column-content .column-content-inner .search-form form .input-group {
+  background-color: #dedede;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.page-member .column-content .column-content-inner .search-form form .input-group .input-group-text {
+  background: transparent;
+  border: none;
+}
+
+.page-member .column-content .column-content-inner .search-form form .input-group input.form-control {
+  border: none;
+  background: transparent;
+}
+
+.page-member .column-content .column-content-inner .search-form form .input-group input.form-control:focus {
+  box-shadow: none;
+}
+
+.page-member .column-content .column-content-inner .staff-groups .staff-group .group-main .staff-card {
+  border: 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.page-member.page-add-new form span small {
+  color: #dedede;
+}
+
+.page-member.page-add-new form .upload-button {
+  position: relative;
+}
+
+.page-member.page-add-new form .upload-button input.file-upload {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  max-width: 100%;
+}
+
+.page-member.page-add-new form .member-info-item input {
+  border: none;
+  height: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.page-member.page-add-new form .member-info-item input:focus {
+  border-bottom: 1px solid #0fc579;
+  border-radius: 0 0 5px 5px;
+  box-shadow: none;
+}
+
+.page-member.page-add-new form .member-info-item .btn-expand {
+  cursor: pointer;
+  padding: 5px;
+}

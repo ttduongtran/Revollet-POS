@@ -8,14 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" href="./assets/images/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Employee | POS</title>
+  <title>New Employee | POS</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap-toggle.min.css"/>
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css"/>
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/page-employee.css"/>
 </head>
 <body>
-  <div class="page-member">
+  <div class="page-member page-add-new">
     <div class="row m-0">
       <div class="col-md-3 p-0">
         <div class="column-navbar">
@@ -121,72 +122,106 @@
             <div class="column-top text-center d-flex">
               <h2 class="title w-100">Information</h2>
               <div class="pull-right text-right d-flex btn-icon-group">
-                <a href="/employee-new-employee.html" class="btn btn-link"><i class="far fa-edit"></i></a>
+                <a href="#" class="btn btn-link"><i class="far fa-save"></i></a>
               </div>
             </div>
           </div>
           <div class="column-content">
             <div class="column-content-inner p-4">
               <div class="card card-member">
-                <div class="member-info p-4">
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Avatar</span>
-                    <span class="text-right w-100"><img src="./assets/images/avatar.jpg" width="50" height="50" alt=""></span>
+                <form action="">
+                  <div class="member-info p-4">
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Avatar</span>
+                      <span class="text-right w-25 upload-button">
+                        <span><small>Tab to upload</small></span>
+                        <img class="profile-pic" src="./assets/images/avatar.jpg" width="50" height="50" alt="">
+                        <input class="file-upload" type="file" accept="image/*"/>
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Employee ID</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-id" class="text-right" value="301" placeholder="Employee ID">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">First Name</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-first-name" class="text-right" value="Staff 1" placeholder="First Name">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Last Name</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-last-name" class="text-right" value="A" placeholder="Last Name">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Phone Number</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-phone" class="text-right" value="0123456789" placeholder="Phone Number">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Email</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-email" class="text-right" value="staff@easyPOS.com" placeholder="Email">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Pin Code</span>
+                      <span class="text-right w-100 d-flex"> 
+                        <input type="text" name="emp-pin-code" class="text-right" value="3456" placeholder="Pin Code">
+                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Role</span>
+                      <span class="text-right w-100 d-flex">
+                        <input type="text" name="emp-role" class="text-right" value="Cashier" placeholder="Role">
+                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Gender</span>
+                      <span class="text-right w-100 d-flex">
+                        <input type="text" name="emp-gender" class="text-right" value="Male" placeholder="Gender">
+                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Birthday</span>
+                      <span class="text-right w-100 d-flex">
+                        <input type="text" name="emp-birthday" class="text-right" value="Jan 01, 1990" placeholder="Birthday">
+                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Address</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-address" class="text-right" value="#01-35B, 313 Orchard Rd 23885, Singapore" placeholder="Address">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Employee Since</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-since" class="text-right" value="Jan 01, 2019" placeholder="Employee Since">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Remark</span>
+                      <span class="text-right w-100">
+                        <input type="text" name="emp-remark" class="text-right" value="" placeholder="Remark">
+                      </span>
+                    </div>
+                    <div class="member-info-item d-flex">
+                      <span class="title w-100">Status</span>
+                      <!-- <span class="text-right w-100 text-success">Active</span> -->
+                      <input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success" data-style="ios" data-offstyle="danger">
+                    </div>
                   </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Employee ID</span>
-                    <span class="text-right w-100">302</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">First Name</span>
-                    <span class="text-right w-100">Staff 2</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Last Name</span>
-                    <span class="text-right w-100">A</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Phone Number</span>
-                    <span class="text-right w-100">0123456789</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Email</span>
-                    <span class="text-right w-100">staff@easyPOS.com</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Pin Code</span>
-                    <span class="text-right w-100">3456</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Role</span>
-                    <span class="text-right w-100">Cashier</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Gender</span>
-                    <span class="text-right w-100">Male</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Birthday</span>
-                    <span class="text-right w-100">Jan 01, 1990</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Address</span>
-                    <span class="text-right w-100">#01-35B, 313 Orchard Rd 23885, Singapore</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Employee Since</span>
-                    <span class="text-right w-100">Jan 01, 2019</span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Remark</span>
-                    <span class="text-right w-100"></span>
-                  </div>
-                  <div class="member-info-item d-flex">
-                    <span class="title w-100">Status</span>
-                    <span class="text-right w-100 text-success">Active</span>
-                  </div>
-                </div>
-                
+                </form>
               </div>
             </div>
           </div>
@@ -228,4 +263,6 @@
 </body>
 <script src="./assets/js/jquery-3.3.1.min.js"></script>     
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/bootstrap-toggle.min.js"></script>
+<script src="./assets/js/application.js"></script>
 </html>

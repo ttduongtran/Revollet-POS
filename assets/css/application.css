@@ -9,6 +9,9 @@ html, body {
 }
 
 /*pos style default*/
+.radius-0 {
+	border-radius: 0
+}
 .bg-green {
 	background-color: #0cc579;
 }
@@ -48,6 +51,13 @@ html, body {
 .is-active a {
   color: #fff !important;
 }
+.toggle-handle {
+  background-color: #fff;
+  color: #0cc579;
+}
+.toggle.ios {
+  border-radius: 20rem;
+}
 /*header style*/
 .column-top .navbar-toggler {
 	border: none;
@@ -81,9 +91,16 @@ html, body {
 	padding: 10px;
 }
 
+
 .column-nav-top .btn-icon-group .btn i {
 	color: #fff;
 	font-size: 1.75rem;
+	transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+.column-nav-top .btn-icon-group .btn:hover i {
+	color: #4c4c4c;
 }
 
 /*style modal*/
@@ -121,7 +138,7 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
-	.page-cash-management .column-content {
+	.column-content {
 		display: block;
 		min-height: 100vh;
 	}
