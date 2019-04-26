@@ -58,6 +58,15 @@ html, body {
 .toggle.ios {
   border-radius: 20rem;
 }
+.toggle.ios .toggle-on, .toggle-off{
+	top: -1px;
+}
+.toggle.ios .toggle-handle { 
+	border-radius: 50%;
+    width: 32px;
+    margin-right: 0px;
+    height: 32px;	 
+}
 /*header style*/
 .column-top .navbar-toggler {
 	border: none;
