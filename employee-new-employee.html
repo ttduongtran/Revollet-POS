@@ -142,59 +142,62 @@
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Employee ID</span>
                       <span class="text-right w-100">
-                        <input type="text" name="emp-id" class="text-right" value="301" placeholder="Employee ID">
+                        <span>301</span>
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
-                      <span class="title w-100">First Name</span>
+                      <span class="title w-100">First Name <sup class="text-danger">*</sup></span>
                       <span class="text-right w-100">
                         <input type="text" name="emp-first-name" class="text-right" value="Staff 1" placeholder="First Name">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
-                      <span class="title w-100">Last Name</span>
+                      <span class="title w-100">Last Name <sup class="text-danger">*</sup></span>
                       <span class="text-right w-100">
                         <input type="text" name="emp-last-name" class="text-right" value="A" placeholder="Last Name">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
-                      <span class="title w-100">Phone Number</span>
+                      <span class="title w-100">Phone Number <sup class="text-danger">*</sup></span>
                       <span class="text-right w-100">
                         <input type="text" name="emp-phone" class="text-right" value="0123456789" placeholder="Phone Number">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
-                      <span class="title w-100">Email</span>
+                      <span class="title w-100">Email <sup class="text-danger">*</sup></span>
                       <span class="text-right w-100">
                         <input type="text" name="emp-email" class="text-right" value="staff@easyPOS.com" placeholder="Email">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Pin Code</span>
-                      <span class="text-right w-100 d-flex"> 
-                        <input type="text" name="emp-pin-code" class="text-right" value="3456" placeholder="Pin Code">
-                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      <span class="text-right w-100 d-flex">
+                        <input type="text" name="emp-pin-code" class="text-right" value="1234" placeholder="Pin Code">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Role</span>
-                      <span class="text-right w-100 d-flex">
-                        <input type="text" name="emp-role" class="text-right" value="Cashier" placeholder="Role">
-                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      <span class="text-right d-flex">
+                         <select class="form-control">
+                          <option value="0">Store Manager</option>
+                          <option value="1">Cashier</option>
+                          <option value="2">Staff</option>
+                        </select>
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Gender</span>
-                      <span class="text-right w-100 d-flex">
-                        <input type="text" name="emp-gender" class="text-right" value="Male" placeholder="Gender">
-                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                      <span class="text-right d-flex">
+                         <select class="form-control">
+                          <option value="0">Male</option>
+                          <option value="1">Female</option>
+                        </select>
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Birthday</span>
                       <span class="text-right w-100 d-flex">
-                        <input type="text" name="emp-birthday" class="text-right" value="Jan 01, 1990" placeholder="Birthday">
-                        <div class="btn-expand" id=""><i class="fas fa-chevron-right"></i></div>
+                        <input type="date" name="emp-birthday" value="2011-08-19" class="text-right"  placeholder="Address">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
@@ -206,18 +209,17 @@
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Employee Since</span>
                       <span class="text-right w-100">
-                        <input type="text" name="emp-since" class="text-right" value="Jan 01, 2019" placeholder="Employee Since">
+                        <span>Jan 01, 2019</span>
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Remark</span>
-                      <span class="text-right w-100">
+                      <span class="text-right d-flex">
                         <input type="text" name="emp-remark" class="text-right" value="" placeholder="Remark">
                       </span>
                     </div>
                     <div class="member-info-item d-flex">
                       <span class="title w-100">Status</span>
-                      <!-- <span class="text-right w-100 text-success">Active</span> -->
                       <input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success" data-style="ios" data-offstyle="danger">
                     </div>
                   </div>
@@ -229,7 +231,6 @@
       </div>
     </div>
   </div>
-  
   <!-- Modal - Email drawer report -->
   <div class="modal modal-deposit fade" id="email-drawer-report" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
