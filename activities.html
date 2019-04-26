@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="author" content="">
@@ -9,14 +10,221 @@
   <link rel="icon" type="image/png" href="./images/rpoint-logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Activities | POS</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/activity.css" />
 </head>
+
 <body>
-    
+  <div class="page-cash-management">
+    <div class="row m-0">
+      <div class="col-md-4 col-lg-3 p-0">
+        <div class="column-navbar">
+          <div class="column-nav-top">
+            <div class="column-top">
+              <div class="topbar float-left">
+                <nav class="navbar bg-green pl-0 pr-0">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLeft"
+                    aria-controls="navLeft" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                  </button>
+                </nav>
+                <div class="collapse" id="navLeft">
+                  <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="topbar float-right">
+                <div class="masthead">
+                  <form action="" class="masthead-search">
+                    <label for="masthead-search-toggle" class="masthead-search-toggle">Toggle Search</label>
+                    <input type="checkbox" id="masthead-search-toggle" class="isHidden" />
+                    <div class="masthead-search-indicator"></div>
+                    <div class="masthead-search-search">
+                      <label for="masthead-search-search" class="isHidden">Search</label>
+                      <input type="search" id="masthead-search-search" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <h2 class="title text-center">All Receipts</h2>
+            </div>
+          </div>
+          <div class="column-content">
+            <div class="list-date-items">
+              <!-- ------- -->
+              <div class="date-item">
+                <div id="datetimepicker" class="date-time-top date-time-item "> Tuesday, 27 May 2014</div>
+                <div class="date-time-list">
+                  <div class="date-time-item "><a href="">
+                      <div class="right-item float-right">
+                        <div class="time-item"> 13:42 <span class="text-uppercase">pm</span></div>
+                      </div>
+                      <div class="left-item">
+                        <div class="id-item">#ST01_141223_003</div>
+                        <div class="price-item text-muted">$ 43.20</div>
+                      </div>
+                    </a></div>
+                  <!-- ------- -->
+                  <div class="date-time-item is-active"><a href="">
+                      <div class="right-item float-right">
+                        <div class="time-item"> 11:50 <span class="text-uppercase">am</span></div>
+                      </div>
+                      <div class="left-item">
+                        <div class="id-item">#ST01_141223_002</div>
+                        <div class="price-item ">$ 340.00</div>
+                      </div>
+                    </a></div>
+                  <div class="date-time-item "><a href="">
+                      <div class="right-item float-right">
+                        <div class="time-item "> 09:53 <span class="text-uppercase">am</span></div>
+                      </div>
+                      <div class="left-item">
+                        <div class="id-item">#ST01_141223_001</div>
+                        <div class="price-item text-muted">$ 43.20</div>
+                      </div>
+                    </a></div>
+                  <!-- ------- -->
+                </div>
+              </div>
+              <div class="date-item">
+                <div id="datetimepicker" class="date-time-top date-time-item "> Monday, 27 May 2014</div>
+                <div class="date-time-list">
+                  <div class="date-time-item "><a href="">
+                      <div class="right-item float-right">
+                        <div class="time-item"> 13:42 <span class="text-uppercase">pm</span></div>
+                      </div>
+                      <div class="left-item">
+                        <div class="id-item">#ST01_141223_003</div>
+                        <div class="price-item text-muted">$ 43.20</div>
+                      </div>
+                    </a></div>
+                  <!-- ------- -->
+                  <div class="date-time-item"><a href="">
+                      <div class="right-item float-right">
+                        <div class="time-item"> 11:50 <span class="text-uppercase">am</span></div>
+                      </div>
+                      <div class="left-item">
+                        <div class="id-item">#ST01_141223_002</div>
+                        <div class="price-item text-muted">$ 340.00</div>
+                      </div>
+                    </a></div>
+                  <!-- ------- -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-9  p-0">
+        <div class="column-main">
+          <div class="column-nav-top">
+            <div class="column-top text-center d-flex">
+              <h2 class="title w-100">Information</h2>
+              <div class="pull-right text-right d-flex btn-icon-group">
+                <a href="mailto:admin@gmail.com" class="btn btn-link"><i class="far fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <!-- ------- -->
+          <div class="column-content">
+            <div class="column-content-inner">
+              <div class="top-title border-bottom border-dark pb-4">
+                <div class="title">
+                  <h3 class="text-bold text-center">EASYPOS REATAILS</h3>
+                </div>
+                <div class="detail-content">
+                  <p class="text-center small text-muted p-0 m-0"> Address: 1101 Westlake Avenue, Suite 200 Seattle, WA
+                    98121 USA</p>
+                  <p class="text-center small text-muted p-0 m-0">Phone: +84 0905 07 00 17 - Email: sales@easypos.com
+                  </p>
+                </div>
+              </div>
+              <!-- ------- -->
+              <div class="main-title mt-3 border-bottom border-dark pb-3 ">
+                <div class="main-content ">
+                  <div class="left-content float-left">
+                    <div class="left-content-detail receipt text-muted ">Receipt # :<span class="text-dark id-item">
+                        #ST01_141223_003</span></div>
+                    <div class="left-content-detail  manager text-muted mt-2">Manager :<span class="text-dark id-item">
+                        Eric Johnson</span></div>
+                    <div class="left-content-detail date text-muted mt-2 ">Date :<span class="text-dark id-item">
+                        Tuesday, 27 May 2014</span></div>
+                  </div>
+                  <div class="right-content float-right">
+                    <div class="id-qr"><img class="img-fluid" src="assets/images/activity/qr.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------ -->
+              <div class="list-detail-items detail-items-center mt-3">
+                <ul class="m-0 p-0">
+                  <li class="detail-item border-bottom border-dark pb-3 ">
+                    <div class="price-detail-item float-right "> $ 175.00</div>
+                    <div class="name-item">Strappy jean shoes</div>
+                    <div class="detail-name small text-muted"> Strappy jean shoes, size 42</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3">
+                    <div class="price-detail-item float-right "> 3 x $40.00 = $ 120.00</div>
+                    <div class="name-item">Bag Denim</div>
+                    <div class="detail-name small text-muted"> Bag Denim Leather, Black</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3 ">
+                    <div class="price-detail-item float-right "> $ 45.00</div>
+                    <div class="name-item">Levi's Collection</div>
+                    <div class="detail-name small text-muted"> Levi's Collection</div>
+                  </li>
+                </ul>
+              </div>
+              <!-- ------ -->
+              <div class="list-detail-items detail-items-right mt-4">
+                <ul class="m-0 p-0">
+                  <li class="detail-item border-bottom border-dark pb-3 ">
+                    <div class="price-detail-item set-line-height float-right "> $ 175.00</div>
+                    <div class="discount ">Discount (10%)</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3">
+                    <div class="price-detail-item set-line-height float-right "> $ 340.00</div>
+                    <div class="sub-total">Sub Total</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3 ">
+                    <div class="price-detail-item set-line-height float-right "> $ 45.00</div>
+                    <div class="vat">VAT (10%)</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3 ">
+                    <div class="price-detail-item set-line-height float-right "> $ 45.00</div>
+                    <div class="service-charge">Service Charge (10%)</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3 mt-3 font-weight-bold ">
+                    <div class="price-detail-item set-line-height float-right font-size-total "> $ 45.00</div>
+                    <div class="total text-uppercase font-size-total">TOTAL</div>
+                  </li>
+                  <li class="detail-item border-bottom border-dark pb-3  mt-3 ">
+                    <div class="price-detail-item float-right set-line-height "> $ 45.00</div>
+                    <div class="cash">Cash</div>
+                  </li>
+                  <li class="detail-item pb-3 mt-3 ">
+                    <div class="price-detail-item float-right set-line-height "> $ 45.00</div>
+                    <div class="visa">Visa</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
-<script src="./assets/js/jquery-3.3.1.min.js"></script>     
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/index.js"></script>     
+<script src="./assets/js/index.js"></script>
+
 </html>
