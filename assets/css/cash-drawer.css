@@ -1,0 +1,92 @@
+.add-border-bottom {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #4c4c4c;
+  font-weight: 500;
+}
+
+.page-setting-general {
+  overflow: hidden;
+}
+.page-setting-general .column-content .category-title {
+  padding: 5px 20px;
+}
+.page-setting-general .column-content .category-title > p {
+  margin-bottom: 0 !important;
+}
+.page-setting-general .category-list-group .category-item {
+  background: white;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.page-setting-general .category-list-group .category-item > p {
+  color: #4c4c4c;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+.page-setting-general .category-list-group .category-item > i {
+  padding: 15px 20px 15px 20px;
+  font-size: 30px;
+  min-width: 80px;
+}
+.page-setting-general .category-list-group .category-item:hover {
+  background: #08945a;
+  border-color: #08945a;
+}
+.page-setting-general .category-list-group .category-item:hover > p {
+  color: white;
+}
+.page-setting-general .category-list-group .category-item:hover > i {
+  color: white;
+}
+.page-setting-general .category-list-group .active {
+  background: #08945a;
+  border-color: #08945a;
+}
+.page-setting-general .category-list-group .active > p {
+  color: white;
+}
+.page-setting-general .category-list-group .active > i {
+  color: white;
+}
+.page-setting-general .category-list-group .hide-border-bottom {
+  border-bottom: 1px solid white;
+}
+.page-setting-general .category-list-group .hide-border-top {
+  border-top: 1px solid white;
+}
+
+.customer-print-list {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 25px 15px 0px 15px;
+  padding: 0px 15px;
+}
+.customer-print-list .customer-print {
+  padding: 18px 0px;
+  border-bottom: 1px solid #aaaaaa;
+  overflow: auto;
+}
+.customer-print-list .customer-print .right-customer .customer-detail,
+.customer-print-list .customer-print .right-customer i {
+  color: #a9a9a9;
+}
+.customer-print-list .customer-signle {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .active-mt-5 {
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=cash-drawer.css.map */
