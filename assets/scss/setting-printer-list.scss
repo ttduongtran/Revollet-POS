@@ -1,0 +1,17 @@
+*{
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.page-setting-printer-list{
+    .general-list{
+        .general-branch{
+            .is-connected{
+                color: #0cc579;
+            }
+            .is-disconnected{
+                color:  red;
+            }
+        }
+    }
+}

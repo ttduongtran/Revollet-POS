@@ -9,18 +9,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" type="image/png" href="./images/rpoint-logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Setting | Modules</title>
+	<title>Setting | Printer List</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	 crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css" />
 	<link rel="stylesheet" href="assets/css/setting-basic.css">
-	<link rel="stylesheet" href="assets/css/setting-modules.css">
+  <link rel="stylesheet" href="assets/css/setting-modules.css">
+  <link rel="stylesheet" href="assets/css/setting-printer-list.css">
 </head>
 
 <body>
-	<div class="page-setting-modules page-setting-general container-fluid">
+	<div class="page-setting-printer-list page-setting-modules page-setting-general container-fluid">
 		<div class="row">
 			<div class="col-md-3 p-0">
 				<div class="column-navbar">
@@ -47,14 +48,14 @@
 					</div>
 					<div class="column-content">
 						<div class="category-title">
-							<p>In store</p>
+							<a href="#">In store</a>
 						</div>
 						<div class="category-list-group">
-							<div class="d-flex category-item align-items-center ">
+							<div class="d-flex category-item align-items-center hide-border-bottom">
 								<i class="fas fa-cog"></i>
 								<a href="#">General</a>
 							</div>
-							<div class="d-flex category-item align-items-center active">
+							<div class="d-flex category-item align-items-center ">
 								<i class="fas fa-sliders-h"></i>
 								<a href="#">Modules</a>
 							</div>
@@ -64,7 +65,7 @@
 							<p>Hardware</p>
 						</div>
 						<div class="category-list-group">
-							<div class="d-flex category-item align-items-center hide-border-bottom">
+							<div class="d-flex category-item align-items-center active">
 								<i class="far fa-list-alt"></i>
 								<a href="#">Printer List</a>
 							</div>
@@ -84,7 +85,10 @@
 				<div class="column-main">
 					<div class="column-nav-top">
 						<div class="column-top text-center d-flex">
-							<h2 class="title w-100">General</h2>
+							<h2 class="title w-100">Printer List</h2>
+							<div class="pull-right text-right d-flex btn-icon-group">
+								<div class="btn btn-link"><i class="fas fa-plus"></i></i></div>
+							</div>
 						</div>
 					</div>
 					<div class="column-content">
@@ -92,43 +96,19 @@
 							<div class="general-list">
 								<div class="general-branch d-flex justify-content-between">
 									<p>Cashier</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Receipts</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Cash Management</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Customer Management</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Employee Management</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Reporting</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-								</div>
-								<div class="general-branch d-flex justify-content-between">
-									<p>Inventory</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
-									</div>
-									 <div class="general-branch d-flex justify-content-between hide-border-bottom">
-									<p>Setting</p>
-									<input type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Disable" data-onstyle="success"
-									 data-style="ios" data-offstyle="danger">
+                  <p class="is-connected">Connected</p>
+                </div>
+                <div class="general-branch d-flex justify-content-between">
+									<p>Beverage</p>
+                  <p class="is-connected">Connected</p>
+                </div>
+                <div class="general-branch d-flex justify-content-between">
+									<p>Fast Food</p>
+                  <p class="is-connected">Connected</p>
+                </div>
+                <div class="general-branch d-flex justify-content-between">
+									<p>Dimsum</p>
+                  <p class="is-disconnected">Disconnected</p>
 								</div>
 							</div>
 						</div>

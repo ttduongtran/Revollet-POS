@@ -11,7 +11,8 @@
       background: white;
       border-top: 1px solid rgb(212, 212, 212);
       border-bottom: 1px solid rgb(212, 212, 212);
-      &>p{
+      &>a{
+        text-decoration: none;
         color: #4c4c4c;
         font-weight: 500;
         font-size: 18px;
@@ -23,8 +24,8 @@
         min-width: 80px;
       }
       &:hover{
-        background: #0cc579;
-      border-color: #0cc579;
+        background: #08945a;
+        border-color: #08945a;
       &>p{
         color: white;
       }
