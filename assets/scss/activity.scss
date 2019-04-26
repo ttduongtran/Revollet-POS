@@ -5,8 +5,12 @@ html {
   font-weight: 500;
   font-size: 16px;
 }
+a {
+  color: #4c4c4c;
+}
 a:hover {
   text-decoration: none;
+  color: #4c4c4c;
 }
 .img-fluid {
   width: 100%;
@@ -27,19 +31,23 @@ ul li {
   .column-content {
     #datetimepicker {
     }
-
     .date-time-item {
       background-color: #fff;
       text-align: -webkit-match-parent;
       padding: 12px 50px;
       border-bottom: 1px solid #d4d4d4;
-      a {
-        color: #4c4c4c;
+      color: #4c4c4c;
+      &:hover {
+        background-color: #08945a;
+        a,.price-item{
+          color: #fff !important;
+        }
       }
     }
     .date-time-top {
       background-color: #f5f5f5 !important;
       padding: 2px 25px;
+      border-bottom: 1px solid #d4d4d4;
     }
     .column-content-inner {
       padding: 20px;
@@ -62,7 +70,7 @@ ul li {
     }
   }
 }
-
+//-------------
 .main-title {
   overflow: auto;
   .main-content {
@@ -242,17 +250,20 @@ input[type="search"]::-webkit-search-cancel-button {
     }
   }
 }
-
+//hover text
+.hover-text-white:hover {
+  color:#fff !important;
+}
 @media only screen and (max-width: 1024px) {
   .page-cash-management .column-content .date-time-item {
     padding: 12px 18px;
   }
   .column-nav-top .title {
     padding: 0 45px;
-}
-#masthead-search-toggle:checked + .masthead-search-indicator + .masthead-search-search {
-  width: 235px;
-}
+  }
+  #masthead-search-toggle:checked + .masthead-search-indicator + .masthead-search-search {
+    width: 235px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .detail-items-right {
@@ -282,5 +293,5 @@ input[type="search"]::-webkit-search-cancel-button {
   .id-qr {
     width: 40px !important;
     margin-top: 24px;
-}
+  }
 }
