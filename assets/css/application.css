@@ -91,6 +91,7 @@ a:hover {
 .column-navbar {
 	border-right: 1px solid #d4d4d4;
 	border-left: 1px solid #d4d4d4;
+	
 }
 
 .column-nav-top {
@@ -160,6 +161,7 @@ a:hover {
 }
 .topbar{
 	position: absolute;
+	z-index: 99999;
 }
 .navbar {
 	width: 0;
