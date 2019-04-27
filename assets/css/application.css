@@ -3,11 +3,20 @@ html, body {
 	color: #4c4c4c;
 	background-color: #f5f5f5;
 	font-family: 'HelveticaNeueLT', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 16px;
+	font-weight: 500;
 	line-height: 1.5;
 }
-
+ul li {
+  list-style-type: none;
+}
+a {
+  color: #4c4c4c;
+}
+a:hover {
+  text-decoration: none;
+  color: #4c4c4c;
+}
 /*pos style default*/
 .radius-0 {
 	border-radius: 0
@@ -145,7 +154,20 @@ html, body {
 .modal .modal-body {
 	background-color: #f5f5f5;
 }
-
+/* fix menu */
+.column-nav-top{
+	position: relative;
+}
+.topbar{
+	position: absolute;
+}
+.navbar {
+	width: 0;
+}
+.lists-page .list-item
+{
+	padding: 4px 0px
+}
 @media screen and (min-width: 768px) {
 	.column-content {
 		display: block;
