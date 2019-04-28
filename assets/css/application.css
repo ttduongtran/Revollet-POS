@@ -170,6 +170,7 @@ a:hover {
 {
 	padding: 4px 0px
 }
+
 @media screen and (min-width: 768px) {
 	.column-content {
 		display: block;

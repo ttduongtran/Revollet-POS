@@ -1,5 +1,6 @@
 body,
-html, * {
+html,
+* {
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -31,6 +32,10 @@ ul li {
 
 .column-navbar {
   height: auto;
+}
+
+.lists-page .list-item .close {
+  display: none;
 }
 
 *,
@@ -195,21 +200,9 @@ input[type=search]::-webkit-search-cancel-button {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: #0cc579;
 }
 
 .dropdown:hover .dropdown-content {
@@ -219,6 +212,210 @@ input[type=search]::-webkit-search-cancel-button {
 .dropdown:hover .dropbtn {
   background-color: #fff;
   color: #0cc579;
+}
+
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+div.tab button {
+  width: 100%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+div.tab button:hover {
+  background-color: #08945a;
+  color: #fff;
+}
+
+div.tab button.active {
+  background-color: #0cc579;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.products-info {
+  padding: 15px;
+}
+.products-info .product-image {
+  margin: 0;
+  overflow: hidden;
+}
+
+.add-border-products,
+.add-border-products-bottom {
+  border: 1px solid #ccc;
+}
+
+.orders-products {
+  color: #fff;
+}
+
+.box-add-customer {
+  flex-direction: row;
+  width: 100%;
+  padding: 15px 10px;
+}
+.box-add-customer .icon-user {
+  flex: 15%;
+}
+.box-add-customer .icon-user .avatar-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.list-customers ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #0cc579;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.list-customers ul li:nth-child(odd) {
+  background: #fff;
+  color: #4c4c4c;
+}
+
+.list-customers ul li:hover {
+  background: #08945a;
+  color: #fff;
+}
+
+.list-customers ul li.checked {
+  background: #08945a;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  color: white;
+}
+
+.header-customer {
+  flex: 85%;
+}
+
+.header-customer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-customer input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background: #fff;
+  line-height: 2;
+}
+.header-customer input:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 15%;
+  color: #4c4c4c;
+  background: #fff;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn .fa-plus-circle {
+  font-size: 20px !important;
+  line-height: 1.5;
+}
+
+.addBtn:hover {
+  background-color: #08945a;
+  color: #fff;
+}
+
+.box-add-customer,
+.column-content-bottom {
+  background: #fff;
+}
+
+.add-discount-top {
+  background: #fff;
+}
+.add-discount-top .add-discount {
+  padding: 16px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.add-discount-top .add-discount .fas {
+  font-size: 20px;
+}
+
+.total-customer {
+  padding: 16px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.total-charge {
+  background-color: #0cc579;
+  margin-top: 100px;
+  border-radius: 5px;
+  padding: 16px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #fff;
+}
+.total-charge .charge-price {
+  font-size: 24px !important;
+  line-height: 1;
+}
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 425px) {
+  .active-margin-top {
+    margin-top: 100px;
+  }
+
+  .products-info {
+    padding: 40px;
+  }
 }
 
 /*# sourceMappingURL=cashier.css.map */
