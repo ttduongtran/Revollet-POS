@@ -1,0 +1,60 @@
+.modal-body .cash-tabs {
+	ul.nav-tabs {
+    border: 1px solid #0fc579;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    width: max-content;
+		li {
+			a {
+		    display: inline-block;
+		    padding: 6px 22px;
+		    min-width: 150px;
+		    text-align: center;
+			}
+			a.active  {
+				background-color: #0fc579;
+				color: #fff;
+			}
+		}
+	}
+
+	.tab-content {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 20px;
+		.content {
+      flex-flow: row wrap;
+	    justify-content: space-around;
+	    padding: 20px;
+	    .card-value {
+		    padding: 12px 20px;
+		    border: 2px dashed #0fc579;
+		    border-radius: 6px;
+		    background-color: #fff;
+		    font-size: 24px;
+		    color: #0fc579;
+
+	    }
+		}
+	}
+}
+.modal-body .card {
+	.value-tender {
+		line-height: 42px;
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+#cashier-payment-cash-finish-close .btn-group {
+	.btn {
+		background:transparent;
+		&:first-child {
+	    border-right: 1px solid #dcdcdc !important;
+		}
+	}
+}
+
+#cashier-payment-cash .card-input-group {
+	
+}
