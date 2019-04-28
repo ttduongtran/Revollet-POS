@@ -16,3 +16,11 @@ $(document).ready(function() {
      $(".file-upload").click();
   });
 });
+
+$("#toggle_button").on("click", function() {
+   $("#nav-main").toggleClass("toggled") 
+});
+
+$("#nav-main").find('.has-submenu').on("click", function(){
+  $(this).parent().find(".sub-list-page").toggleClass("closed", 2000) ;
+});

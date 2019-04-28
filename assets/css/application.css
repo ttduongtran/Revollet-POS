@@ -101,13 +101,13 @@ a:hover {
 
 .column-nav-top .title {
 	color: #fff;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	line-height: 50px;
 	margin: 0;
 }
 
 .column-nav-top .btn-icon-group .btn {
-	padding: 10px;
+	padding: 8px 10px;
 }
 
 
@@ -162,13 +162,82 @@ a:hover {
 .topbar{
 	position: absolute;
 	z-index: 99999;
-}
-.navbar {
+	top: 0;
+	left: 0;
 	width: 0;
 }
-.lists-page .list-item
-{
-	padding: 4px 0px
+
+#nav-main {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  top: 0;
+  background-color: #34495e;
+  transform: translate3d(0,0,0);
+  left: -1px;
+  transition: 500ms transform ease-in-out;
+}
+
+.toggled#nav-main {
+  transform: translate3d(-300px,0,0);
+}
+
+#nav-main .nav-lists{
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+}
+
+#nav-main .list-item {
+  color: white;
+  line-height: 2em;
+  position: relative;
+}
+
+#nav-main .sub-list-page {
+  position: relative;
+  padding-left: 20px;
+  overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+}
+#nav-main .sub-list-page.closed {
+  /*display: block;*/
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  max-height: 0;
+}
+
+#nav-main .list-item a {
+  color: white;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 300;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-top: 1px solid #406081;
+  border-bottom: 1px solid #2c3e50;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#nav-main .list-item a:hover {
+  background: #3d566e;
+}
+
+#toggle_button {
+  display: block; 
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: -55px;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,19 +246,20 @@ a:hover {
 		min-height: 100vh;
 	}
 }
+@media screen and (max-width: 475px) {
+	#nav-main {
+		max-width: 260px;
+	}
+	.toggle#nav-main {
+	  transform: translate3d(-260px,0,0);
+	}
+	#toggle_button {
+    display: block;
+		position: absolute;
+		cursor: pointer;
+		top: 15px;
+		right: -55px;
+		background: #34495e;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

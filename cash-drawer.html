@@ -26,76 +26,88 @@
         <div class="column-navbar">
           <div class="column-nav-top">
             <div class="column-top">
-              <div class="topbar float-left">
-                <nav class="navbar bg-green pl-0 pr-0">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLeft"
+              <div class="topbar">
+                <nav id="nav-main" class="toggled navbar bg-green pl-0 pr-0">
+                  <button id="toggle_button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLeft"
                     aria-controls="navLeft" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-line"></span>
                     <span class="navbar-toggler-line"></span>
                     <span class="navbar-toggler-line"></span>
                   </button>
-                </nav>
-                <div class="collapse" id="navLeft">
-                  <div class="bg-dark p-4">
-                    <h4 class="text-white">List Page</h4>
-                    <ul class="lists-page ">
-                      <li class="list-item">
-                        <a href="./activities.html" class="link-item text-warning">Activity</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./cash-drawer.html" class="link-item text-warning">Cash drawer</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./cash-management.html" class="link-item text-warning">Cash management</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./customer-module-add-new-ustomer.html" class="link-item text-warning">Customer module</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./employee-new-customer.html" class="link-item text-warning">Employee customer</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./employee-new-employee.html" class="link-item text-warning">Employee</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./employee.html" class="link-item text-warning">Employee</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./forgot-password.html" class="link-item text-warning">Forgot-password</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./index.html" class="link-item text-warning">Index</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./inventory-product.html" class="link-item text-warning">Inventory-product</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./launch-screen.html" class="link-item text-warning">Launch screen</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./login.html" class="link-item text-warning">Login</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./product-list.html" class="link-item text-warning">Product list</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./register.html" class="link-item text-warning">Register</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./setting-modules.html" class="link-item text-warning">Settings modules</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./setting-printer-list.html" class="link-item text-warning">Settings printer</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./settings-general.html" class="link-item text-warning">Settings general</a>
-                      </li>
-                      <li class="list-item">
-                        <a href="./settings-printing.html" class="link-item text-warning">Settings printing</a>
-                      </li>
-                    </ul>
+                  <div class="nav-lists" id="navLeft">
+                    <div class="list-item">
+                      <a href="./launch-screen.html" class="link-item">Launch screen</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./index.html" class="link-item">Index</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./activities.html" class="link-item">Activity</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./product-list.html" class="link-item">Product list</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./inventory-product.html" class="link-item">Inventory-product</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Cash <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./cash-drawer.html" class="link-item">Cash drawer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./cash-management.html" class="link-item">Cash management</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="list-item">
+                      <a href="./customer-module-add-new-ustomer.html" class="link-item">Customer module</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Employee <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./employee.html" class="link-item">Employee</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./employee-new-customer.html" class="link-item">Employee customer</a>
+                       </div>
+                        <div class="list-item">
+                          <a href="./employee-new-employee.html" class="link-item">Employee</a>
+                       </div>
+                      </div>
+                    </div>                    
+                    <div class="list-item">
+                      <a href="./register.html" class="link-item">Register</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./login.html" class="link-item">Login</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./forgot-password.html" class="link-item">Forgot-password</a>
+                    </div>
+
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Settings <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./setting-modules.html" class="link-item">Settings modules</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./setting-printer-list.html" class="link-item">Settings printer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-general.html" class="link-item">Settings general</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-printing.html" class="link-item">Settings printing</a>
+                       </div>
+                      </div>
+                   </div>
                   </div>
-                </div>
+                </nav>
               </div>
               <h2 class="title text-center">Settings</h2>
             </div>
@@ -187,7 +199,7 @@
 </body>
 <script src="./assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
-<script src="./assets/js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+<script src="./assets/js/application.js"></script>
 
 </html>
