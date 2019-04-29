@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="">
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="./images/rpoint-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cashier | POS</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/cashier.css" />
+  <link rel="stylesheet" href="assets/css/page-cash-order-tab.css">
+</head>
+
+<body>
+  <div class="page-cash-order-tab">
+    <div class="row m-0">
+      <div class="col-12 col-md-8 col-lg-9 p-0">
+        <div class="column-navbar">
+          <div class="column-nav-top">
+            <div class="column-top">
+              <div class="topbar">
+                <nav id="nav-main" class="toggled navbar bg-green pl-0 pr-0">
+                  <button id="toggle_button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLeft"
+                    aria-controls="navLeft" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                  </button>
+                  <div class="nav-lists" id="navLeft">
+                    <div class="list-item">
+                      <a href="./launch-screen.html" class="link-item">Launch screen</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./index.html" class="link-item">Index</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./activities.html" class="link-item">Activity</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./inventory-product.html" class="link-item">Inventory-product</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Cash <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./cash-drawer.html" class="link-item">Cash drawer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./cash-management.html" class="link-item">Cash management</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Employee <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./employee.html" class="link-item">Employee</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./employee-new-customer.html" class="link-item">Employee customer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./employee-new-employee.html" class="link-item">Employee</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <a href="./register.html" class="link-item">Register</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./login.html" class="link-item">Login</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./forgot-password.html" class="link-item">Forgot-password</a>
+                    </div>
+
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Settings <i class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./setting-modules.html" class="link-item">Settings modules</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./setting-printer-list.html" class="link-item">Settings printer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-general.html" class="link-item">Settings general</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-printing.html" class="link-item">Settings printing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <!-- ------- -->
+              <div class="toggle-menu  float-right">
+                <div class="masthead">
+                  <form action="" class="masthead-search">
+                    <label for="masthead-search-toggle" class="masthead-search-toggle">Toggle Search</label>
+                    <input type="checkbox" id="masthead-search-toggle" class="isHidden" />
+                    <div class="masthead-search-indicator"></div>
+                    <div class="masthead-search-search">
+                      <label for="masthead-search-search" class="isHidden">Search</label>
+                      <input type="search" id="masthead-search-search" placeholder="Search..." />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="ml-5 title ">
+                <div class="dropdown">
+                  <ul class="nav nav-pills">
+                    <li class="remove-close active">
+                      <div class="products">
+                        <a class="border-radius-top" href="#tab1" data-toggle="tab">
+                          Products <i class="active fas fa-chevron-down "></i>
+                        </a>
+                        <div class="set-d-none">
+                          <div class="list-order-product d-flex">
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="remove-close">
+                      <a class="border-radius-top" href="#tab2" data-toggle="tab">Orders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-content">
+            <div class="drop-down-detail">
+              <div class="tab-content clearfix">
+                <div class="tab-pane active" id="tab1">
+                  <div id="Product 1">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products ">
+                          <div class="products-info ">
+                            <a href="">
+                              <div class="product-image grow ">
+                                <img class="img-fluid " src="assets/images/products_img/51451707_330605974462328_452126603044978688_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57155185_593479157815037_9216097225543778304_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/53341310_432686344137691_6698587520629735424_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 add-border-products-bottom">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/53868212_1144471475755217_1199877003369512960_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row">
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/51451707_330605974462328_452126603044978688_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                          </div>
+                          </a>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/58019482_425896181534499_6882902163782107136_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57504515_1142825399250385_1098132054215753728_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products-bottom">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/56196708_1179590432211047_236968635803893760_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row">
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57216626_2335895269984485_3999457809275027456_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57360294_2302359653374694_4260938106905034752_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57446438_449397799130085_3857147546845577216_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products-bottom">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57490288_1208803699278693_8738814114282864640_n (1).png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row">
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57417838_617396848728272_683359464643887104_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57433561_652614788508475_2268224911086452736_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57433598_172752696967746_738285469225189376_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6  add-border-products-bottom">
+                          <div class="products-info">
+                            <a href="">
+                              <div class="product-image grow">
+                                <img class="img-fluid" src="assets/images/products_img/57434150_386600125515895_6166930016027279360_n.png"
+                                  alt="">
+                              </div>
+                              <div class="product-title text-center mt-3">
+                                <span class="text-center">Sport shose for man</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab order -->
+                <div class="tab-pane" id="tab2">
+                  <div id="Orders">
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-4">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-4">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-2">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-2">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                      <div class="row mb-3">
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-4">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-3">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 order-list-child">
+                          <div class="wrapper border-color-1">
+                            <a href="#">
+                              <div class="order-detail">
+                                <p class="product-id"">#14876</p>
+                                <p class="
+                                  product-price">$27.00</p>
+                              </div>
+                              <div class="order-customer-name color-background-1">
+                                <p>James</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end row -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 p-0 active-margin-top">
+        <div class="column-main">
+          <div class="column-nav-top">
+            <div class="column-top text-center d-flex">
+              <div class="float-left text-left d-flex btn-icon-group">
+                <a href="#" class="btn btn-link"><i class="fas fa-list-ul"></i></a>
+              </div>
+              <div class="title w-100">Card(0)</div>
+              <div class="pull-right text-right d-flex btn-icon-group">
+                <a href="#" class="btn btn-link"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- ------- -->
+          <div class="column-content">
+            <div class="column-content-inner">
+              <div class="column-top add-customer">
+                <div class="box-add-customer d-flex">
+                  <div class="icon-user d-flex justify-content-center">
+                    <div class="avatar-user d-flex justify-content-center ">
+                      <img class="img-fluid" src="./assets/images/products_img/avatar.png" alt="">
+                    </div>
+                  </div>
+                  <div id="myDIV" class="header-customer">
+                    <input type="text" id="myInput" placeholder="Add Customer">
+                    <span onclick="newElement()" class="addBtn"><i class="fas fa-plus-circle"></i></span>
+                  </div>
+                </div>
+                <div class="column-content-bottom mt-3">
+                  <div class="list-customers">
+                    <ul id="myUL">
+                      <li>Loi Tran</li>
+                      <li class="checked">Duong Tran</li>
+                      <li>Minh Bui</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="add-discount-top mt-3">
+                  <a href="#">
+                    <div class="add-discount float-right">
+                      <i class="fas fa-plus-circle"></i>
+                    </div>
+                  </a>
+                  <div class="add-discount">
+                    <a href="#"> Add Discount </a>
+                  </div>
+                  <div class="total-customer pt-3">
+                    <div class="total-price float-right">$0.00</div>
+                    <div class="subtotal">Subtotal</div>
+                  </div>
+                  <div class="total-customer pt-3">
+                    <div class="taxes-price float-right">$0.00</div>
+                    <div class="taxes">Taxes (0%)</div>
+                  </div>
+                </div>
+                <div class="total-charge">
+                  <div class="charge-price float-right">$0.00</div>
+                  <div class="charge">Charge</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/application.js"></script>
+<script src="./assets/js/cashier.js"></script>
+
+</html>
