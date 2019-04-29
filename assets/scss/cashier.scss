@@ -198,6 +198,7 @@ input[type="search"]::-webkit-search-cancel-button {
         &:hover {
           color: #0cc579;
           background: #fff;
+          transition: 0.3s;
         }
         i{
           padding-right: 20px;
@@ -209,7 +210,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .border-radius-top
 {
-  border-top-right-radius: 10px !important;
+  border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
  .products:hover .set-d-none{
@@ -225,6 +226,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .list-order-product a:hover{
     background: #08945a !important;
     color: #fff !important;
+    transition: 0.3s;
  }
 .dropbtn {
   background-color: #0cc579;

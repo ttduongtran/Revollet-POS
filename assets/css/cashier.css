@@ -194,13 +194,14 @@ input[type=search]::-webkit-search-cancel-button {
 .dropdown ul li a:hover {
   color: #0cc579;
   background: #fff;
+  transition: 0.3s;
 }
 .dropdown ul li a i {
   padding-right: 20px;
 }
 
 .border-radius-top {
-  border-top-right-radius: 10px !important;
+  border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
@@ -216,6 +217,7 @@ input[type=search]::-webkit-search-cancel-button {
 .list-order-product a:hover {
   background: #08945a !important;
   color: #fff !important;
+  transition: 0.3s;
 }
 
 .dropbtn {
