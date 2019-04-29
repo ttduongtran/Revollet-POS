@@ -2,11 +2,6 @@ a {
   color: #4c4c4c;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #4c4c4c;
-}
-
 .img-fluid {
   width: 100%;
 }
@@ -25,8 +20,8 @@ ul li {
   height: auto;
 }
 
-.lists-page .list-item .close {
-  display: none;
+.remove-close span {
+  display: none !important;
 }
 
 *,
@@ -36,7 +31,7 @@ ul li {
   -moz-box-sizing: border-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -71,7 +66,6 @@ input[type="search"]::-webkit-search-cancel-button {
   z-index: 0;
   cursor: pointer;
 }
-
 .masthead-search-indicator:before {
   content: "";
   width: 20px;
@@ -85,7 +79,6 @@ input[type="search"]::-webkit-search-cancel-button {
   border: 2px solid #ffffff;
   transition: all 0.35s ease-in-out;
 }
-
 .masthead-search-indicator:after {
   content: "";
   width: 11px;
@@ -117,7 +110,6 @@ input[type="search"]::-webkit-search-cancel-button {
   -moz-transform: rotate(-47deg);
   transform: rotate(-47deg);
 }
-
 #masthead-search-toggle:checked + .masthead-search-indicator:after {
   content: "";
   width: 30px;
@@ -140,7 +132,6 @@ input[type="search"]::-webkit-search-cancel-button {
   transition: all 0.4s ease-in-out;
   background-color: rgba(255, 255, 255, 0.95);
 }
-
 .masthead-search-search > * {
   width: 100%;
   height: 100%;
@@ -150,7 +141,6 @@ input[type="search"]::-webkit-search-cancel-button {
   background: none;
   font-size: 14px;
 }
-
 .masthead-search-search > *:focus {
   outline: none;
 }
@@ -175,6 +165,59 @@ input[type="search"]::-webkit-search-cancel-button {
   opacity: 0;
 }
 
+.dropdown {
+  position: relative;
+  background-color: #0cc579;
+  color: white;
+  padding: 0px;
+  border: none;
+}
+.dropdown .set-d-none {
+  display: none;
+}
+.dropdown .set-d-none .list-order-product {
+  position: absolute;
+  flex-direction: column;
+  float: left;
+  z-index: 999;
+  background-color: #fff;
+  padding: 10px 14px;
+  margin-top: 10px;
+  color: #4c4c4c;
+  font-size: 16px;
+}
+.dropdown ul li a {
+  color: #fff;
+  padding: 10px 20px 22px 20px;
+  cursor: pointer;
+}
+.dropdown ul li a:hover {
+  color: #0cc579;
+  background: #fff;
+}
+.dropdown ul li a i {
+  padding-right: 20px;
+}
+
+.border-radius-top {
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px;
+}
+
+.products:hover .set-d-none {
+  display: block;
+}
+.products:hover .set-d-none .list-order-product a {
+  color: #4c4c4c !important;
+  padding: 0px 40px;
+  font-weight: 300;
+}
+
+.list-order-product a:hover {
+  background: #08945a !important;
+  color: #fff !important;
+}
+
 .dropbtn {
   background-color: #0cc579;
   color: white;
@@ -184,12 +227,6 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  font-size: 16px;
 }
 
 .dropdown-content {
@@ -215,8 +252,18 @@ div.tab {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
-
 div.tab button {
+  width: 100%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+div.tab a {
   width: 100%;
   background-color: inherit;
   float: left;
@@ -248,7 +295,6 @@ div.tab button.active {
 .products-info {
   padding: 15px;
 }
-
 .products-info .product-image {
   margin: 0;
   overflow: hidden;
@@ -268,11 +314,9 @@ div.tab button.active {
   width: 100%;
   padding: 15px 10px;
 }
-
 .box-add-customer .icon-user {
   flex: 15%;
 }
-
 .box-add-customer .icon-user .avatar-user {
   width: 50px;
   height: 50px;
@@ -341,7 +385,6 @@ div.tab button.active {
   background: #fff;
   line-height: 2;
 }
-
 .header-customer input:hover {
   border-bottom: 1px solid #ccc;
 }
@@ -357,7 +400,6 @@ div.tab button.active {
   transition: 0.3s;
   border-radius: 0;
 }
-
 .addBtn .fa-plus-circle {
   font-size: 20px !important;
   line-height: 1.5;
@@ -376,12 +418,10 @@ div.tab button.active {
 .add-discount-top {
   background: #fff;
 }
-
 .add-discount-top .add-discount {
   padding: 16px 15px;
   border-bottom: 1px solid #ccc;
 }
-
 .add-discount-top .add-discount .fas {
   font-size: 20px;
 }
@@ -400,7 +440,6 @@ div.tab button.active {
   margin-right: 15px;
   color: #fff;
 }
-
 .total-charge .charge-price {
   font-size: 24px !important;
   line-height: 1;
@@ -409,7 +448,6 @@ div.tab button.active {
 .grow {
   transition: all 0.3s ease-in-out;
 }
-
 .grow:hover {
   transform: scale(1.1);
 }
@@ -418,7 +456,10 @@ div.tab button.active {
   .active-margin-top {
     margin-top: 100px;
   }
+
   .products-info {
     padding: 40px;
   }
 }
+
+/*# sourceMappingURL=cashier.css.map */
