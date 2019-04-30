@@ -239,7 +239,9 @@ a:hover {
   top: 10px;
   right: -55px;
 }
-
+.masthead-search {
+  z-index: 99999;
+}
 @media screen and (min-width: 768px) {
 	.column-content {
 		display: block;

@@ -145,6 +145,129 @@
             </div>
           </div>
           <div class="column-content">
+              <div class="popup-modal">
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash">#cashier-payment-cash</a>
+      
+                  <!-- Modal - Cashier payment cash -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex">
+                          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                          </button>
+                          <h5 class="modal-title text-center w-100">$151.80</h5>
+                        </div>
+                        <div class="modal-body">
+                          <div class="cash-tabs">
+                            <ul class="nav nav-tabs">
+                              <li><a data-toggle="tab" href="#cash" class="active">Cash</a></li>
+                              <li><a data-toggle="tab" href="#external">External Terminal</a></li>
+                            </ul>
+      
+                            <div class="tab-content">
+                              <div id="cash" class="tab-pane fade in active show">
+                                <div class="content d-flex">
+                                  <div class="card-value">$152.00</div>
+                                  <div class="card-value">$155.00</div>
+                                  <div class="card-value">$200.00</div>
+                                </div>
+                                <div class="card d-flex flex-last flex-row p-2">
+                                  <div class="w-75 value-tender">$151.00</div>
+                                  <button class="btn btn-pos w-25" type="submit">Tender</button>
+                                </div>
+                              </div>
+                              <div id="external" class="tab-pane fade">
+                                <div class="content d-flex">
+                                  <div class="card-value">Master Card</div>
+                                  <div class="card-value">Visa</div>
+                                  <div class="card-value">NETS</div>
+                                </div>
+                                <div class="p-2">
+                                  <div class="card-input-group d-flex flex-last flex-row mb-4">
+                                    <div class="card w-50 mr-2 p-3 value-tender">$151.00</div>
+                                    <input type="text" placeholder="Input approved code" class="card ml-2 w-50 p-3" value=""
+                                      name="approve-code">
+                                  </div>
+                                  <button class="btn btn-pos w-100 p-3 font-weight-bold" type="submit">PAY</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash-finish">#cashier-payment-cash</a>
+                  <!-- Modal - Cashier payment cash finish -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash-finish" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex">
+                          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                          </button>
+                          <h5 class="modal-title text-center w-100 font-weight-normal">$48.20 change out of $200.00</h5>
+                        </div>
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">Do you want to send the receipts?</p>
+                          <div class="email-drawer-report">
+                            <form action="">
+                              <input type="email" class="form-control" placeholder="Email Receipt">
+                              <button class="btn btn-pos w-100 mt-3" type="submit">Fishish</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#no-network-connection">#no-network-connection</a>
+                  <!-- Modal - Cashier no-network-connection -->
+                  <div class="modal modal-deposit fade" id="no-network-connection" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">There is no network connection.<br>Email will be sent
+                            later.</p>
+                          <hr>
+                          <button data-dismiss="modal" aria-label="Close"
+                            class="btn-link border-0 text-center w-100">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash-finish-close">#cashier-payment-cash-finish-close</a>
+                  <!-- Modal - Cashier payment cash finish close -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash-finish-close" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">Are you sure want to cancel payment process?</p>
+                          <hr>
+                          <div class="btn-group d-flex">
+                            <button data-dismiss="modal" aria-label="Close"
+                              class="btn text-success border-0 text-center w-50">Yes</button>
+                            <button data-dismiss="modal" aria-label="Close"
+                              class="btn text-warning border-0 text-center w-50">No</button>
+      
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             <div class="drop-down-detail">
               <div class="tab-content clearfix">
                 <div class="tab-pane active" id="tab1">

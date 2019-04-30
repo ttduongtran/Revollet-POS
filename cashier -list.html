@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="">
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="./images/rpoint-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cashier Lists | POS</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/cashier-list.css" />
+</head>
+
+<body>
+  <div class="page-cash-management">
+    <div class="row m-0">
+      <div class="col-12 col-md-8 col-lg-9 p-0">
+        <div class="column-navbar">
+          <div class="column-nav-top">
+            <div class="column-top">
+              <div class="topbar">
+                <nav id="nav-main" class="toggled navbar bg-green pl-0 pr-0">
+                  <button id="toggle_button" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navLeft" aria-controls="navLeft" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                  </button>
+                  <div class="nav-lists" id="navLeft">
+                    <div class="list-item">
+                      <a href="./launch-screen.html" class="link-item">Launch screen</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./index.html" class="link-item">Index</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./activities.html" class="link-item">Activity</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./inventory-product.html" class="link-item">Inventory-product</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Cash <i
+                          class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./cash-drawer.html" class="link-item">Cash drawer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./cash-management.html" class="link-item">Cash management</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Employee <i
+                          class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./employee.html" class="link-item">Employee</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./employee-new-customer.html" class="link-item">Employee customer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./employee-new-employee.html" class="link-item">Employee</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <a href="./register.html" class="link-item">Register</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./login.html" class="link-item">Login</a>
+                    </div>
+                    <div class="list-item">
+                      <a href="./forgot-password.html" class="link-item">Forgot-password</a>
+                    </div>
+
+                    <div class="list-item">
+                      <a href="#" class="link-item has-submenu">Settings <i
+                          class="fas fa-chevron-down float-right p-2"></i></a>
+                      <div class="sub-list-page closed">
+                        <div class="list-item">
+                          <a href="./setting-modules.html" class="link-item">Settings modules</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./setting-printer-list.html" class="link-item">Settings printer</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-general.html" class="link-item">Settings general</a>
+                        </div>
+                        <div class="list-item">
+                          <a href="./settings-printing.html" class="link-item">Settings printing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <!-- ------- -->
+              <div class="toggle-menu  float-right">
+                <div class="masthead">
+                  <form action="" class="masthead-search">
+                    <label for="masthead-search-toggle" class="masthead-search-toggle">Toggle Search</label>
+                    <input type="checkbox" id="masthead-search-toggle" class="isHidden" />
+                    <div class="masthead-search-indicator"></div>
+                    <div class="masthead-search-search">
+                      <label for="masthead-search-search" class="isHidden">Search</label>
+                      <input type="search" id="masthead-search-search" placeholder="Search..." />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="ml-5 title ">
+                <div class="dropdown">
+                  <ul class="nav nav-pills">
+                    <li class="remove-close active">
+                      <div class="products">
+                        <a class="border-radius-top" href="#tab1" data-toggle="tab">
+                          Products <i class="active fas fa-chevron-down "></i>
+                        </a>
+                        <div class="set-d-none">
+                          <div class="list-order-product d-flex">
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                            <a href="" class="list-product-detail">Products</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="remove-close"><a class="border-radius-top" href="#tab2" data-toggle="tab">Orders</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-content">
+              <div class="popup-modal">
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash">#cashier-payment-cash</a>
+      
+                  <!-- Modal - Cashier payment cash -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex">
+                          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                          </button>
+                          <h5 class="modal-title text-center w-100">$151.80</h5>
+                        </div>
+                        <div class="modal-body">
+                          <div class="cash-tabs">
+                            <ul class="nav nav-tabs">
+                              <li><a data-toggle="tab" href="#cash" class="active">Cash</a></li>
+                              <li><a data-toggle="tab" href="#external">External Terminal</a></li>
+                            </ul>
+      
+                            <div class="tab-content">
+                              <div id="cash" class="tab-pane fade in active show">
+                                <div class="content d-flex">
+                                  <div class="card-value">$152.00</div>
+                                  <div class="card-value">$155.00</div>
+                                  <div class="card-value">$200.00</div>
+                                </div>
+                                <div class="card d-flex flex-last flex-row p-2">
+                                  <div class="w-75 value-tender">$151.00</div>
+                                  <button class="btn btn-pos w-25" type="submit">Tender</button>
+                                </div>
+                              </div>
+                              <div id="external" class="tab-pane fade">
+                                <div class="content d-flex">
+                                  <div class="card-value">Master Card</div>
+                                  <div class="card-value">Visa</div>
+                                  <div class="card-value">NETS</div>
+                                </div>
+                                <div class="p-2">
+                                  <div class="card-input-group d-flex flex-last flex-row mb-4">
+                                    <div class="card w-50 mr-2 p-3 value-tender">$151.00</div>
+                                    <input type="text" placeholder="Input approved code" class="card ml-2 w-50 p-3" value=""
+                                      name="approve-code">
+                                  </div>
+                                  <button class="btn btn-pos w-100 p-3 font-weight-bold" type="submit">PAY</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash-finish">#cashier-payment-cash</a>
+                  <!-- Modal - Cashier payment cash finish -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash-finish" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex">
+                          <button type="button" class="pull-left" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                          </button>
+                          <h5 class="modal-title text-center w-100 font-weight-normal">$48.20 change out of $200.00</h5>
+                        </div>
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">Do you want to send the receipts?</p>
+                          <div class="email-drawer-report">
+                            <form action="">
+                              <input type="email" class="form-control" placeholder="Email Receipt">
+                              <button class="btn btn-pos w-100 mt-3" type="submit">Fishish</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#no-network-connection">#no-network-connection</a>
+                  <!-- Modal - Cashier no-network-connection -->
+                  <div class="modal modal-deposit fade" id="no-network-connection" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">There is no network connection.<br>Email will be sent
+                            later.</p>
+                          <hr>
+                          <button data-dismiss="modal" aria-label="Close"
+                            class="btn-link border-0 text-center w-100">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a href="#" class="btn btn-link btn-plus" data-toggle="modal"
+                    data-target="#cashier-payment-cash-finish-close">#cashier-payment-cash-finish-close</a>
+                  <!-- Modal - Cashier payment cash finish close -->
+                  <div class="modal modal-deposit fade" id="cashier-payment-cash-finish-close" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-md" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p class="text-center font-weight-normal p-1">Are you sure want to cancel payment process?</p>
+                          <hr>
+                          <div class="btn-group d-flex">
+                            <button data-dismiss="modal" aria-label="Close"
+                              class="btn text-success border-0 text-center w-50">Yes</button>
+                            <button data-dismiss="modal" aria-label="Close"
+                              class="btn text-warning border-0 text-center w-50">No</button>
+      
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <div class="lists-cahsier">
+              <ul class="list-item">
+                <li>
+                  <a href="#">
+                    <div class="item-info d-flex">
+                      <div class="item-img d-flex justify-content-center align-items-center">
+                        <div class="item-icon-box">
+                          <img class="img-fluid" src="./assets/images/products_img/avatar.png" alt="">
+                        </div>
+                      </div>
+                      <div class="container-item">
+                        <div class="item-quantity float-right">Available quantity: 20</div>
+                        <div class="item-title">Sport Shose For Man </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- -------- -->
+                <li>
+                  <a href="#">
+                    <div class="item-info d-flex">
+                      <div class="item-img d-flex justify-content-center align-items-center">
+                        <div class="item-icon-box">
+                          <img class="img-fluid" src="./assets/images/products_img/avatar.png" alt="">
+                        </div>
+                      </div>
+                      <div class="container-item">
+                        <div class="item-quantity float-right">Available quantity: 03</div>
+                        <div class="item-title">Levi's Collection </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- -------- -->
+                <li>
+                  <a href="#">
+                    <div class="item-info d-flex">
+                      <div class="item-img d-flex justify-content-center align-items-center">
+                        <div class="item-icon-box">
+                          <img class="img-fluid" src="./assets/images/products_img/avatar2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="container-item">
+                        <div class="item-quantity float-right">Available quantity: 20</div>
+                        <div class="item-title">Strappy Jean </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- -------- -->
+                <li>
+                  <a href="#">
+                    <div class="item-info d-flex">
+                      <div class="item-img d-flex justify-content-center align-items-center">
+                        <div class="item-icon-box">
+                          <img class="img-fluid" src="./assets/images/products_img/avatar3.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="container-item">
+                        <div class="item-quantity float-right">Available quantity: 20</div>
+                        <div class="item-title">Jean Shoes </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- -------- -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 p-0 active-margin-top">
+        <div class="column-main">
+          <div class="column-nav-top">
+            <div class="column-top text-center d-flex">
+              <div class="float-left text-left d-flex btn-icon-group">
+                <a href="#" class="btn btn-link"><i class="fas fa-list-ul"></i></a>
+              </div>
+              <div class="title w-100">Card(0)</div>
+              <div class="pull-right text-right d-flex btn-icon-group">
+                <a href="#" class="btn btn-link"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- ------- -->
+          <div class="column-content">
+            <div class="column-content-inner">
+              <div class="column-top add-customer">
+                <div class="box-add-customer d-flex">
+                  <div class="icon-user d-flex justify-content-center">
+                    <div class="avatar-user d-flex justify-content-center ">
+                      <img class="img-fluid" src="./assets/images/products_img/avatar.png" alt="">
+                    </div>
+                  </div>
+                  <div id="myDIV" class="header-customer">
+                    <input type="text" id="myInput" placeholder="Add Customer">
+                    <span onclick="newElement()" class="addBtn"><i class="fas fa-plus-circle"></i></span>
+                  </div>
+                </div>
+                <div class="column-content-bottom mt-3">
+                  <div class="list-customers">
+                    <ul id="myUL">
+                      <li>Loi Tran</li>
+                      <li class="checked">Duong Tran</li>
+                      <li>Minh Bui</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="add-discount-top mt-3">
+                  <a href="#">
+                    <div class="add-discount float-right">
+                      <i class="fas fa-plus-circle"></i>
+                    </div>
+                  </a>
+                  <div class="add-discount">
+                    <a href="#"> Add Discount </a>
+                  </div>
+                  <div class="total-customer pt-3">
+                    <div class="total-price float-right">$0.00</div>
+                    <div class="subtotal">Subtotal</div>
+                  </div>
+                  <div class="total-customer pt-3">
+                    <div class="taxes-price float-right">$0.00</div>
+                    <div class="taxes">Taxes (0%)</div>
+                  </div>
+                </div>
+                <div class="total-charge">
+                  <div class="charge-price float-right">$357.00</div>
+                  <div class="charge">Charge</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/application.js"></script>
+<script src="./assets/js/cashier.js"></script>
+
+</html>
